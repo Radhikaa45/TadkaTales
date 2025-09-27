@@ -52,32 +52,44 @@ const HomeView = () => {
 
       {/* About Section */}
       <section className="about-section" id="about-section">
-        <div className="about-content">
-          <h2>About Our Kitchen</h2>
-          <div className="about-grid">
-            <div className="about-card">
-              <div className="about-icon">👨‍🍳</div>
-              <h3>Traditional Recipes</h3>
-              <p>Authentic recipes learned from grandmothers' hands, still as delicious as ever.</p>
-            </div>
-            <div className="about-card">
-              <div className="about-icon">🌶️</div>
-              <h3>Regional Specialties</h3>
-              <p>Explore diverse regional cuisines from Kashmir to Kanyakumari, each with unique spices and cooking styles.</p>
-            </div>
-            <div className="about-card">
-              <div className="about-icon">🥘</div>
-              <h3>Step-by-Step Guidance</h3>
-              <p>Detailed instructions with tips and tricks to help you master Indian cooking, even if you're a beginner.</p>
-            </div>
-            <div className="about-card">
-              <div className="about-icon">📜</div>
-              <h3>Cultural Heritage</h3>
-              <p>Each recipe comes with cultural significance and history, connecting you to India's rich culinary heritage.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="about-content">
+    <h2>About Our Kitchen</h2>
+    <div className="about-grid">
+      <div className="about-card">
+        <div className="about-icon">👨‍🍳</div>
+        <h3>Traditional Recipes</h3>
+        <p>Authentic recipes learned from grandmothers' hands, still as delicious as ever.</p>
+      </div>
+      <div className="about-card">
+        <div className="about-icon">🌶️</div>
+        <h3>Regional Specialties</h3>
+        <p>Explore diverse regional cuisines from Kashmir to Kanyakumari, each with unique spices and cooking styles.</p>
+      </div>
+      <div className="about-card">
+        <div className="about-icon">🥘</div>
+        <h3>Step-by-Step Guidance</h3>
+        <p>Detailed instructions with tips and tricks to help you master Indian cooking, even if you're a beginner.</p>
+      </div>
+      <div className="about-card">
+        <div className="about-icon">📜</div>
+        <h3>Cultural Heritage</h3>
+        <p>Each recipe comes with cultural significance and history, connecting you to India's rich culinary heritage.</p>
+      </div>
+      {/* ✅ New Card 1 */}
+      <div className="about-card">
+        <div className="about-icon">🥗</div>
+        <h3>Healthy Cooking</h3>
+        <p>Wholesome, nutritious recipes that balance taste and health, perfect for today’s mindful lifestyle.</p>
+      </div>
+      {/* ✅ New Card 2 */}
+      <div className="about-card">
+        <div className="about-icon">🍛</div>
+        <h3>Fusion Flavors</h3>
+        <p>Discover modern twists on classic Indian dishes — where traditional meets contemporary cuisine.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Featured Recipes Section */}
       <section className="featured-section" id="featured-section" ref={featuredSectionRef}>
