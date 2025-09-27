@@ -1,0 +1,118 @@
+/* Base header container: Equivalent to bg-stone-800 shadow-lg sticky top-0 z-50 */
+.app-header {
+    background-color: #3f3f46; /* stone-800 */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+/* Inner content container: Equivalent to max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center */
+.header-content {
+    max-width: 80rem; /* max-w-7xl */
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    padding-top: 1rem; /* py-4 */
+    padding-bottom: 1rem; /* py-4 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive Padding */
+@media (min-width: 640px) { /* sm */
+    .header-content {
+        padding-left: 1.5rem; /* sm:px-6 */
+        padding-right: 1.5rem; /* sm:px-6 */
+    }
+}
+
+@media (min-width: 1024px) { /* lg */
+    .header-content {
+        padding-left: 2rem; /* lg:px-8 */
+        padding-right: 2rem; /* lg:px-8 */
+    }
+}
+
+/* Logo container: Equivalent to text-3xl font-extrabold text-white tracking-wide cursor-pointer */
+.logo-container {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 800; /* font-extrabold */
+    color: #ffffff; /* text-white */
+    letter-spacing: 0.05em; /* tracking-wide */
+    cursor: pointer;
+}
+
+/* Logo accent: Equivalent to text-yellow-300 */
+.logo-accent {
+    color: #fcd34d; /* yellow-300 */
+}
+
+/* Navigation container: Equivalent to hidden md:flex space-x-8 */
+.nav-menu {
+    display: none; /* hidden */
+    gap: 2rem; /* space-x-8 */
+}
+
+@media (min-width: 768px) { /* md */
+    .nav-menu {
+        display: flex; /* md:flex */
+    }
+}
+
+/* Navigation button common styles */
+.nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    font-weight: 500; /* font-medium */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Default navigation button state: Equivalent to text-white hover:text-yellow-300 */
+.nav-button-default {
+    color: #ffffff; /* text-white */
+}
+
+.nav-button-default:hover {
+    color: #fcd34d; /* hover:text-yellow-300 */
+}
+
+/* Active navigation button state: Equivalent to text-yellow-300 border-b-2 border-yellow-300 */
+.nav-button-active {
+    color: #fcd34d; /* text-yellow-300 */
+    border-bottom: 2px solid #fcd34d; /* border-b-2 border-yellow-300 */
+    padding-bottom: 0.125rem; /* Small padding to align text nicely */
+}
+
+/* Mobile menu button container: Equivalent to md:hidden text-white p-2 rounded-lg hover:bg-stone-700 transition */
+.mobile-menu-button {
+    display: block; /* Default is visible */
+    color: #ffffff; /* text-white */
+    padding: 0.5rem; /* p-2 */
+    border-radius: 0.5rem; /* rounded-lg */
+    transition: background-color 0.15s ease-in-out; /* transition */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-button:hover {
+    background-color: #44403c; /* hover:bg-stone-700 */
+}
+
+@media (min-width: 768px) { /* md */
+    .mobile-menu-button {
+        display: none; /* md:hidden */
+    }
+}
+
+/* SVG icon size */
+.mobile-menu-button svg {
+    width: 1.5rem; /* w-6 */
+    height: 1.5rem; /* h-6 */
+}

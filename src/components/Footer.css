@@ -1,0 +1,69 @@
+/* Base footer container: Equivalent to bg-stone-800 mt-12 py-8 */
+.app-footer {
+    background-color: #3f3f46; /* stone-800 */
+    margin-top: 3rem; /* mt-12 */
+    padding-top: 2rem; /* py-8 */
+    padding-bottom: 2rem; /* py-8 */
+}
+
+/* Inner content container: Equivalent to max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center */
+.footer-content {
+    max-width: 80rem; /* max-w-7xl */
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    text-align: center;
+}
+
+/* Responsive Padding */
+@media (min-width: 640px) { /* sm */
+    .footer-content {
+        padding-left: 1.5rem; /* sm:px-6 */
+        padding-right: 1.5rem; /* sm:px-6 */
+    }
+}
+
+@media (min-width: 1024px) { /* lg */
+    .footer-content {
+        padding-left: 2rem; /* lg:px-8 */
+        padding-right: 2rem; /* lg:px-8 */
+    }
+}
+
+
+/* Copyright text: Equivalent to text-stone-300 text-sm */
+.footer-text {
+    color: #d6d3d1; /* stone-300 */
+    font-size: 0.875rem; /* text-sm */
+}
+
+/* Link container: Equivalent to mt-2 space-x-4 */
+.footer-links {
+    margin-top: 0.5rem; /* mt-2 */
+    /* space-x-4 is handled by margin on anchor tags below */
+}
+
+/* Individual links: Equivalent to text-stone-300 hover:text-amber-400 text-xs */
+.footer-links a {
+    color: #d6d3d1; /* stone-300 */
+    font-size: 0.75rem; /* text-xs */
+    text-decoration: none; /* Remove underline */
+    margin-left: 1rem; /* Equivalent to space-x-4 */
+    margin-right: 1rem;
+    transition: color 0.15s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #fbbf24; /* amber-400 */
+}
+
+/* Remove margin for the first link to prevent unnecessary spacing */
+.footer-links a:first-child {
+    margin-left: 0;
+}
+
+/* Remove margin for the last link */
+.footer-links a:last-child {
+    margin-right: 0;
+}

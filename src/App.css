@@ -1,0 +1,72 @@
+/* Make the app container a full-height flex column */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Make the main content grow to fill space */
+.app-content {
+    flex: 1; /* Pushes footer to the bottom if content is short */
+}
+
+/* Your existing footer CSS */
+.app-footer {
+    background-color: #3f3f46; /* stone-800 */
+    margin-top: 3rem; 
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+}
+
+.footer-content {
+    max-width: 80rem; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    text-align: center;
+}
+
+@media (min-width: 640px) { 
+    .footer-content {
+        padding-left: 1.5rem; 
+        padding-right: 1.5rem; 
+    }
+}
+
+@media (min-width: 1024px) { 
+    .footer-content {
+        padding-left: 2rem; 
+        padding-right: 2rem; 
+    }
+}
+
+.footer-text {
+    color: #d6d3d1; 
+    font-size: 0.875rem; 
+}
+
+.footer-links {
+    margin-top: 0.5rem; 
+}
+
+.footer-links a {
+    color: #d6d3d1; 
+    font-size: 0.75rem; 
+    text-decoration: none; 
+    margin-left: 1rem; 
+    margin-right: 1rem;
+    transition: color 0.15s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #fbbf24; 
+}
+
+.footer-links a:first-child {
+    margin-left: 0;
+}
+
+.footer-links a:last-child {
+    margin-right: 0;
+}
