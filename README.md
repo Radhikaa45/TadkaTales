@@ -39,12 +39,12 @@ cd tadka-tales-app
 Install Dependencies:
 
 npm install
-# or yarn install
+
 
 Start the Development Server:
 
 npm run dev
-# or yarn dev
+
 
 The application will now be running on http://localhost:5173 (or a similar port).
 
@@ -52,6 +52,4 @@ The application will now be running on http://localhost:5173 (or a similar port)
 For simplicity and ease of viewing in a single file environment, all data (DISHES), components (Header, Footer, DishCard, RecipeModal), and the main application logic (App, HomeView, RecipesView, AboutView) are contained within the single file: IndianCuisineApp.jsx. In a production application, these would be split into dedicated files and folders (e.g., src/data/, src/components/, src/pages/).
 
 ✍️ Customization
-Data: Modify the DISHES array at the top of IndianCuisineApp.jsx to add, edit, or remove recipes.
-
-Styling: Adjust the Tailwind CSS classes (e.g., bg-stone-800, bg-amber-500) to change the primary and accent colors of the premium theme.
+Data: Modify the DISHES array  to add, edit, or remove recipes.
